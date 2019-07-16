@@ -1,17 +1,7 @@
----
-platform: linux
-
 jobs:
+- name: job-hello-world
+  public: true
+  plan:
+  - get: resource-tutorial
   - task: hello-world
-    file: ./taskFolder/nginx.sh
-
-
-
-
-#image_resource:
- # type: docker-image
-  #source: {repository: busybox}
-
-  
-#run:
- # path: ./taskFolder/nginx.sh
+    file: resource-tutorial/tutorials/basic/task-hello-world/task_hello_world.yml
