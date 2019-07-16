@@ -14,8 +14,7 @@ run:
   args:
   - -ec
   - |
-    !#bin/bash
-    set -e
+    #set -e
     sudo apt install curl -y
     curl -o https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh
