@@ -5,8 +5,9 @@ image_resource:
   type: docker-image
   source: {repository: ubuntu}
 
-#inputs:
-#- name: nginx
+inputs:
+- name: nginx
+  file: ./taskFolder/nginx.sh
 
 run:
-  path: ./taskFolder/nginx.sh
+- name: nginx
