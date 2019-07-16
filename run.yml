@@ -3,8 +3,7 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: #{repository: nginx-on-concourse/taskFolder/}
-    uri: https://github.com/apfeifer00/nginx-on-concourse.git
+  source: {repository: github.com/apfeifer00/nginx-on-concourse.git}
 
 #inputs:
 #- name: nginx
