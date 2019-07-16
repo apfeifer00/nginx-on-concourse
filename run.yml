@@ -7,7 +7,7 @@ image_resource:
 
 inputs:
 - name: nginx
-  file: ./taskFolder/nginx.sh
+  path: ./taskFolder/nginx.sh
 
 run:
 - nginx
