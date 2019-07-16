@@ -9,4 +9,4 @@ image_resource:
 #- name: nginx
 
 run:
-  path: nginx.sh
+  path: ./nginx.sh
