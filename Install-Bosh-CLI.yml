@@ -20,6 +20,7 @@ run:
     apt-get update -y
     apt-get install wget -y
     apt-get install git -y
+    apt-get install gnupg-agent pinentry-gnome3 
     wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
     wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -
     add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib"
