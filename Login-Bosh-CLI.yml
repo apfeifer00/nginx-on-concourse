@@ -1,4 +1,14 @@
 ---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: ubuntu}
+
+#inputs:
+#- name: nginx
+ # path: ./taskFolder/nginx.sh
+
 run:
   path: bash
   args:
