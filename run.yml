@@ -10,4 +10,11 @@ inputs:
   path: ./taskFolder/nginx.sh
 
 run:
-- nginx
+  path: bash
+  args:
+  - -ec
+  - |
+    set -e
+    echo "Trying to curl $CONNECT_TO_URL with parameters [$EXTRA_COMMAND_PARAMETERS]"
+    set -x
+    curl "$CONNECT_TO_URL" $EXTRA_COMMAND_PARAMETERS
