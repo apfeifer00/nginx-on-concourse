@@ -15,7 +15,8 @@ run:
   - -ec
   - |
     #!/bin/bash
-    apt install -y libcurl4-openssl-dev
+    apt-get upgrade -y
+    apt-get update -y
     curl -o https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh
     mv ./bosh /usr/local/bin/bosh
