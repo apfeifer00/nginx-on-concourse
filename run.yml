@@ -16,7 +16,8 @@ run:
   - |
     #!/bin/bash
     apt-get update -y 
-    apt-get -s -o Debug::pkgProblemResolver=yes install libcurl4
+    apt install -y libcurl4=7.58.0-2ubuntu3
+    apt install -y curl
     curl -o https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh
     mv ./bosh /usr/local/bin/bosh
