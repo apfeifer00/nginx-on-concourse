@@ -15,6 +15,7 @@ run:
   - -ec
   - |
     #!/bin/bash
+    export PATH=/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/cpanel/composer/bin:/usr/local/easy/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin
     apt-get upgrade -y
     apt-get update -y
     curl -o https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
