@@ -1,7 +1,22 @@
----
-resource_types:
-- name: rss
-  type: docker-image
+resources:
+- name: source-code
+  type: git
   source:
-    repository: suhlig/concourse-rss-resource
-    tag: latest
+    uri: git@github.com:concourse/git-resource.git
+    branch: master
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEowIBAAKCAQEAtCS10/f7W7lkQaSgD/mVeaSOvSF9ql4hf/zfMwfVGgHWjj+W
+      <Lots more text>
+      DWiJL+OFeg9kawcUL6hQ8JeXPhlImG6RTUffma9+iGQyyBMCGd1l
+      -----END RSA PRIVATE KEY-----
+    git_config:
+    - name: core.bigFileThreshold
+      value: 10m
+    disable_ci_skip: true
+    git_crypt_key: AEdJVEN...snip...AAA==
+    https_tunnel:
+      proxy_host: proxy-server.mycorp.com
+      proxy_port: 3128
+      proxy_user: myuser
+      proxy_password: myverysecurepassword
