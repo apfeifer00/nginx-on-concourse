@@ -1,7 +1,7 @@
 ---
 platform: linux
 
-resources:
+image_resource:
   type: bash #docker-image
   source: {repository: github.com/apfeifer00/nginx-on-concourse.git}
 
