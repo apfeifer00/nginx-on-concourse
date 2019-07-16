@@ -20,12 +20,12 @@ run:
     apt-get update -y
     apt-get install wget -y
     apt-get install git -y
-    apt-get install gnupg-agent pinentry-gnome3 
+    apt-get install gnupg-agent pinentry-gnome3 -y
     wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
     wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -
     add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib"
-    apt update
-    apt install virtualbox-6.0
+    apt update -y
+    apt install virtualbox-6.0 -y
     wget https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh-cli-5.5.1-linux-amd64
     mv ./bosh-cli-5.5.1-linux-amd64 /usr/local/bin/bosh
