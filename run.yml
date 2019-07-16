@@ -1,3 +1,5 @@
-inputs:
-- name: resource-installation
-  path: ./taskFolder/nginx.sh
+plan:
+- get: my-repo
+- in_parallel:
+  - task: nginx
+    file: taskFolder/nginx.sh
