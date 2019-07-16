@@ -4,7 +4,6 @@ platform: linux
 image_resource:
   type: /bin/sh #docker-image
   source: {repository: github.com/apfeifer00/nginx-on-concourse.git}
-  tag: latest
 
 #inputs:
 #- name: nginx
