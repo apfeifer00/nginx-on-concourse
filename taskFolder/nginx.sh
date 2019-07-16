@@ -3,5 +3,4 @@
 set -eu
 
 
-echo "Concourse API target ${fly_target}"
-echo "Tutorial $(basename $DIR)"
+echo "sdhjertjertjterzzjke5rzkjrtfkdthkrtk"
