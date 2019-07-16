@@ -3,7 +3,7 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: apfeifer00/nginx-on-concourse}
+  source: {repository: concourse/buildroot}
 
 #inputs:
 #- name: nginx
