@@ -1,5 +1,3 @@
 plan:
-- get: my-repo
-- in_parallel:
-  - task: nginx
+- task: nginx
     file: taskFolder/nginx.sh
