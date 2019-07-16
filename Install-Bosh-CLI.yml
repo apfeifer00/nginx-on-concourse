@@ -19,11 +19,15 @@ run:
     apt-get upgrade -y
     apt-get update -y
     apt-get install wget -y
+    apt-get install git -y
     wget https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh-cli-5.5.1-linux-amd64
     mv ./bosh-cli-5.5.1-linux-amd64 /usr/local/bin/bosh
-    export BOSH_CLIENT=admin
-    export BOSH_CLIENT_SECRET=`bosh int ./creds.yml --path /admin_password`
-    bosh alias-env vbox -e 192.168.50.6 --ca-cert <(bosh int ./creds.yml --path /director_ssl/ca)
-    bosh -e vbox log-in
+    
+    mkdir -p ~/bosh-env/virtualbox
+    cd ~/bosh-env/virtualbox
+    git clone https://github.com/cloudfoundry/bosh-deployment.git
+    ./bosh-deployment/virtualbox/create-env.sh
+    source .envrc
+    bosh -e vbox env
     echo "Done........."
