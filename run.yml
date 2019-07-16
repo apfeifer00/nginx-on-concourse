@@ -5,7 +5,7 @@ jobs:
 - name: job-hello-world
   public: true
   plan:
-  - get: resource-tutorial
+ # - get: resource-tutorial
   - task: hello-world
     file: ./taskFolder/nginx.sh
 
