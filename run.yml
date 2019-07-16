@@ -14,10 +14,8 @@ run:
   args:
   - -ec
   - |
-    #set -e
-    echo "alias curl='$(which curl)'" >> ~/.bashrc; . ~/.bashrc
-
-    curl -o https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
+    #!/bin/bash
+    git clone https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh
     mv ./bosh /usr/local/bin/bosh
     apt-get install -y build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3
