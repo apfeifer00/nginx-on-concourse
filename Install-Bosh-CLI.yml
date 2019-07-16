@@ -22,5 +22,8 @@ run:
     wget https://github.com/cloudfoundry/bosh-cli/releases/download/v5.5.1/bosh-cli-5.5.1-linux-amd64
     chmod +x ./bosh-cli-5.5.1-linux-amd64
     mv ./bosh-cli-5.5.1-linux-amd64 /usr/local/bin/bosh
-    apt-get install -y build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3
+    export BOSH_CLIENT=admin
+    export BOSH_CLIENT_SECRET=`bosh int ./creds.yml --path /admin_password`
+    bosh alias-env vbox -e 192.168.50.6 --ca-cert <(bosh int ./creds.yml --path /director_ssl/ca)
+    bosh -e vbox log-in
     echo "Done........."
