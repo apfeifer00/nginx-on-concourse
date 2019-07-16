@@ -15,6 +15,4 @@ run:
   - -ec
   - |
     set -e
-    echo "Trying to curl $CONNECT_TO_URL with parameters [$EXTRA_COMMAND_PARAMETERS]"
-    set -x
-    curl "$CONNECT_TO_URL" $EXTRA_COMMAND_PARAMETERS
+    echo "TEST TEST TEST"
