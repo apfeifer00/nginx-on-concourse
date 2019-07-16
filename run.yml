@@ -6,7 +6,7 @@ image_resource:
   source: {repository: nginx-on-concourse/taskFolder/}
 
 inputs:
-- name: git-resource
+- name: nginx.sh
 
 run:
   path: nginx.sh
