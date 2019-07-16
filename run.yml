@@ -10,4 +10,4 @@ inputs:
   file: ./taskFolder/nginx.sh
 
 run:
-- name: nginx
+- nginx
