@@ -19,7 +19,7 @@ run:
     apt-get update -y
     apt-get install wget -y
     apt-get install git -y
-    apt-get install virtualbox-ose-dkms
+    apt-get install ose-dkms
     apt-get install linux-headers-generic
     dpkg-reconfigure virtualbox-dkms
     dpkg-reconfigure virtualbox
