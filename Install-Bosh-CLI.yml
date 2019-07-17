@@ -15,7 +15,6 @@ run:
   - -ec
   - |
     #!/bin/bash
-    su -
     apt-get upgrade -y 
     apt-get update -y
     apt-get install wget -y
