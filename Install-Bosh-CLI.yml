@@ -5,8 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: ubuntu}
 
-#inputs:
-#- name: nginx
+inputs:
+- name: installationBosh
  # path: ./taskFolder/nginx.sh
 
 run:
