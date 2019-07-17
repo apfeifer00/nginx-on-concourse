@@ -20,6 +20,5 @@ mkdir -p ~/bosh-env/virtualbox
 cd ~/bosh-env/virtualbox
 git clone https://github.com/cloudfoundry/bosh-deployment.git
 ./bosh-deployment/virtualbox/create-env.sh
-source .envrc
 bosh -e vbox env
 echo "Done........."
