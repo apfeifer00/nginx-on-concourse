@@ -5,11 +5,11 @@ image_resource:
   type: docker-image
   source: {repository: ubuntu}
 
-inputs:
-- name: ./Ressources/installationBosh.sh
+get:
+- name: Ressources
   
 #inputs:
 #- name: installationBosh
 
 run: 
-  path: installationBosh.sh
+  path: Ressources/installationBosh.sh
