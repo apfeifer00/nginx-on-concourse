@@ -1,5 +1,4 @@
 #!/bin/bash
-sleep 100m
 apt-get update -y
 apt-get install -y wget git linux-headers-generic virtualbox virtualbox-qt virtualbox-dkms build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3
     
