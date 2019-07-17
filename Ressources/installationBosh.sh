@@ -1,5 +1,4 @@
 #!/bin/bash
-sleep 100m
 apt-get update -y
 apt-get install -y wget git linux-headers-generic
 apt-get install git -y
