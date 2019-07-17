@@ -10,4 +10,4 @@ image_resource:
  # path: ./taskFolder/nginx.sh
 
 run:
-  path: ./Ressources/installationBosh.sh
+  path: ./nginx-on-concourse/Ressources/installationBosh.sh
