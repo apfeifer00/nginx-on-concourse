@@ -9,4 +9,4 @@ image_resource:
 #- name: installationBosh
 
 run: 
-  path: /Ressources/installationBosh.sh
+  path: ./Ressources/installationBosh.sh
