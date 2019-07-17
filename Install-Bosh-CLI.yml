@@ -6,10 +6,10 @@ image_resource:
   source: {repository: ubuntu}
 
 inputs:
-- name: Ressources
+- name: nginx-on-concourse
   
 #inputs:
 #- name: installationBosh
 
 run: 
-  path: Ressources/installationBosh.sh
+  path: nginx-on-concourse/Ressources/installationBosh.sh
