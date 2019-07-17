@@ -9,4 +9,4 @@ image_resource:
 #- name: installationBosh
 
 run: 
-  path: ./nginx-on-concourse/Ressources/installationBosh.sh
+  path: /nginx-on-concourse/Ressources/installationBosh.sh
