@@ -20,9 +20,9 @@ run:
     apt-get install wget -y
     apt-get install git -y
     apt-get install linux-headers-generic -y
-    dpkg-reconfigure virtualbox-dkms -y
-    dpkg-reconfigure virtualbox -y
-    dpkg-reconfigure virtualbox-dkms -y
+    dpkg-reconfigure virtualbox-dkms 
+    dpkg-reconfigure virtualbox 
+    dpkg-reconfigure virtualbox-dkms 
     modprobe vboxdrv
     modprobe vboxnetflt
     apt-get install -y virtualbox virtualbox-qt virtualbox-dkms 
