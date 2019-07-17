@@ -6,10 +6,10 @@ image_resource:
   source: {repository: ubuntu}
 
 inputs:
-- name: resource-tutorial
+- name: ./Ressources/installationBosh.sh
   
 #inputs:
 #- name: installationBosh
 
 run: 
-  path: ./Ressources/installationBosh.sh
+  path: installationBosh.sh
