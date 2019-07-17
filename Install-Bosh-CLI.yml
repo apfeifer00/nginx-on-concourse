@@ -17,7 +17,7 @@ run:
     #!/bin/bash
     
     apt-get upgrade -y
-    sudo apt-get update -y
+    apt-get update -y
     sudo apt-get install wget -y
     sudo apt-get install git -y
     sudo apt-get install virtualbox-ose-dkms
