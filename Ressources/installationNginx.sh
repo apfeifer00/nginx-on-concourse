@@ -1,15 +1,7 @@
 #!/bin/bash
 apt-get update -y
-apt-get install -y wget 
-
-
+service nginx restart
+curl http://127.0.0.1:80
  
 
-
-
-
-
-
-
-sleep 100m
 echo "Done........."
