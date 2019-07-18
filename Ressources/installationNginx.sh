@@ -11,4 +11,5 @@ apt-get install -y nginx
 
 
 
+sleep 100m
 echo "Done........."
