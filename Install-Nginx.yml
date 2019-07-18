@@ -9,10 +9,10 @@ image_resource:
 inputs:
 - name: nginx-on-concourse
 params:
-  BOSH_CA_CERT: "((BOSH_CA_CERT))"
-  BOSH_CLIENT: "((BOSH_CLIENT))"
-  BOSH_CLIENT_SECRET: "((BOSH_CLIENT_SECRET))"
-  BOSH_ENVIRONMENT: "((BOSH_ENVIRONMENT))"
+  BOSH_CA_CERT: "(( grab config.bosh.ca ))"
+  BOSH_CLIENT: "(( grab config.bosh.client ))"
+  BOSH_CLIENT_SECRET: "(( grab config.bosh.clientSecret ))"
+  BOSH_ENVIRONMENT: "(( grab config.bosh.environment ))"
   BOSH_ACTION: deploy
 run: 
   path: nginx-on-concourse/Ressources/installationNginx.sh
