@@ -2,7 +2,7 @@
 apt-get update -y
 apt-get install curl -y
 service nginx restart
-curl http://127.0.0.1:80
  
 
-echo "Done........."
+echo "\n\nDone.........\n\n\n\n"
+curl http://127.0.0.1:80
