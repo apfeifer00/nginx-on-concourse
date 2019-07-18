@@ -3,13 +3,11 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: nginx}
+  source: {repository: starkandwayne/concourse
+}
 
 inputs:
 - name: nginx-on-concourse
-  
-#inputs:
-#- name: installationBosh
 
 run: 
   path: nginx-on-concourse/Ressources/installationNginx.sh

@@ -1,7 +1,10 @@
 #!/bin/bash
-apt-get update -y
-apt-get install curl -y
-service nginx restart
+
+bosh -e vbox envs
+
+
+
+
  
 
 echo -e "\n \n Done......... \n \n \n \n"
