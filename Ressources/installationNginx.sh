@@ -3,8 +3,8 @@ apt-get install git -y
 
 bosh -e vbox envs
 
-git clone https://github.com/apfeifer00/nginx-on-concourse/
-
+cd nginx-on-concourse/
+bosh -e vbox -d nginx deploy Install-Nginx.yml
 
 
 
