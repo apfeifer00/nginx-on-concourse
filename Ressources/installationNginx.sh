@@ -3,7 +3,7 @@ apt-get install git -y
 
 bosh -e vbox envs
 
-git clone https://apfeifer@bitbucket.org/meshstack/ap-kt-cf.git/
+git clone https://github.com/apfeifer00/nginx-on-concourse/tree/master/Nginx
 
 
 
