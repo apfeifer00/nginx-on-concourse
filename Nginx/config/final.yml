@@ -1,0 +1,6 @@
+---
+blobstore:
+  provider: local
+  options:
+    bucket_name: nginx-release
+final_name: nginx

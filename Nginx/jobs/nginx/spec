@@ -1,0 +1,12 @@
+---
+name: nginx
+templates:
+  ctl.sh: bin/ctl
+  nginx.conf.erb: conf/nginx.conf
+  ssl_key.erb: conf/ssl_key.pem
+  ssl_cert.erb: conf/ssl_cert.crt
+  users_file.erb: conf/htpasswd
+
+packages:
+- nginx
+
