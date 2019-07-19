@@ -3,7 +3,7 @@ apt-get install git -y
 
 bosh -e vbox envs
 
-git clone https://github.com/apfeifer00/nginx-on-concourse/Nginx
+git clone https://github.com/apfeifer00/nginx-on-concourse/
 
 
 
