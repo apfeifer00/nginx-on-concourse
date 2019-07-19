@@ -4,7 +4,7 @@ apt-get install git -y
 #sleep 100m
 
 
-bosh -e vbox env
+bosh env
 
 cd nginx-on-concourse/
 #bosh -e vbox -d nginx deploy Install-Nginx.yml
