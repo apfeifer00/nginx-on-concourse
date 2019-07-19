@@ -6,8 +6,9 @@ apt-get install git -y
 
 bosh env
 
-cd nginx-on-concourse/
-#bosh -e vbox -d nginx deploy Install-Nginx.yml
+git clone git@bitbucket.org:meshstack/ap-kt-cf.git
+cd ./helloWorld/
+bosh -d nginx deploy Install-Nginx.yml
 
 
 
