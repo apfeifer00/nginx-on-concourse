@@ -14,4 +14,3 @@ bosh -e ci -d nginx deploy manifests/nginx-lite.yml
  
 
 echo -e "\n \n Done......... \n \n \n \n"
-Curl  http://10.244.0.34/
