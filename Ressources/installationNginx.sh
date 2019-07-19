@@ -5,10 +5,10 @@ apt-get install git -y
 
 
 bosh env
-
+git clone https://github.com/apfeifer00/NginxBosh
 #git clone git@bitbucket.org:meshstack/ap-kt-cf.git
-cd ./bosh-nginx-release/
-bosh -d nginx deploy Install-Nginx.yml
+cd ./NginxBosh/
+bosh -d nginx deploy manifest.yml
 
 
 
