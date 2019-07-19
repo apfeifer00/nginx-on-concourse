@@ -1,6 +1,9 @@
 #!/bin/bash
 apt-get install git -y
-route add -net 10.244.0.0/16 gw  192.168.50.6
+
+sleep 100m
+
+
 bosh -e vbox env
 
 cd nginx-on-concourse/
