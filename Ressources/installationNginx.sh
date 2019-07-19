@@ -6,8 +6,8 @@ apt-get install git -y
 
 bosh env
 
-git clone git@bitbucket.org:meshstack/ap-kt-cf.git
-cd ./helloWorld/
+#git clone git@bitbucket.org:meshstack/ap-kt-cf.git
+cd ./bosh-nginx-release/
 bosh -d nginx deploy Install-Nginx.yml
 
 
