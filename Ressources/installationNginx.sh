@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get install git -y
 
-sleep 100m
+#sleep 100m
 
 
 bosh -e vbox env
