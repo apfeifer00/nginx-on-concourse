@@ -8,7 +8,7 @@ apt-get install git -y
 cd ~/workspace
 git clone https://github.com/apfeifer00/NginxBosh.git
 cd NginxBosh
-bosh -d nginx deploy ./manifests.yml -n
+bosh -d nginx deploy ./manifest.yml -n
 
 
  
