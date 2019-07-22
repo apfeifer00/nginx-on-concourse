@@ -8,7 +8,7 @@ bosh env
 git clone https://github.com/apfeifer00/NginxBosh
 #git clone git@bitbucket.org:meshstack/ap-kt-cf.git
 cd ./NginxBosh/
-bosh -d nginx deploy manifest.yml
+bosh -d nginx deploy manifest.yml -n
 
 
 
