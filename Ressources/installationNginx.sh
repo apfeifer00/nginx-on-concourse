@@ -6,9 +6,10 @@ apt-get install git -y
 
 #git clone git@bitbucket.org:meshstack/ap-kt-cf.git
 cd ~/workspace
-git clone https://github.com/apfeifer00/NginxBosh.git
-cd NginxBosh
-bosh -d nginx deploy ./manifest.yml -n
+git clone https://github.com/cloudfoundry-community/nginx-release.git
+cd nginx-release
+bosh ur https://github.com/cloudfoundry-community/nginx-release/releases/download/1.13.12/nginx-release-1.13.12.tgz -n
+bosh -d nginx deploy manifests/nginx-lite.yml -n
 
 
  
