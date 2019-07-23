@@ -3,11 +3,10 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: starkandwayne/concourse
-}
+  source: {repository: starkandwayne/concourse}
 
 inputs:
 - name: boshFiles
 
 run: 
-- path: boshFiles/Ressources/deploy.sh
+  path: boshFiles/Ressources/deploy.sh
