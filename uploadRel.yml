@@ -10,4 +10,4 @@ inputs:
 - name: boshFiles
 
 run: 
-  path: ./Ressources/uploadRelease.sh
+  path: Ressources/uploadRelease.sh
