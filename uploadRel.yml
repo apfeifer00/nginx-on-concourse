@@ -7,7 +7,7 @@ image_resource:
 }
 
 inputs:
-- name: uploadRelease
+- name: Create-Release
 
 run: 
   path: nginx-on-concourse/Ressources/uploadRelease.sh
