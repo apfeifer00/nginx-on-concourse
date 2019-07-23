@@ -10,4 +10,4 @@ inputs:
 - name: nginx-release
 
 run: 
-  path: nginx-on-concourse/Ressources/installationNginx.sh
+- path: nginx-on-concourse/Ressources/installationNginx.sh
