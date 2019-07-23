@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#cd ~/workspace
-#git clone https://github.com/cloudfoundry-community/nginx-release.git
-#cd nginx-release
-#bosh ur https://github.com/cloudfoundry-community/nginx-release/releases/download/1.13.12/nginx-release-1.13.12.tgz -n
+cd ~/workspace
+git clone https://github.com/cloudfoundry-community/nginx-release.git
+cd nginx-release
+bosh ur https://github.com/cloudfoundry-community/nginx-release/releases/download/1.13.12/nginx-release-1.13.12.tgz -n
 
 
  
