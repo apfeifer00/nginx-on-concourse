@@ -10,4 +10,4 @@ inputs:
 - name: boshFiles
 
 run: 
-  path: boshFiles/Ressources/uploadRelease.sh
+  path: nginx-on-concourse/Ressources/uploadRelease.sh
