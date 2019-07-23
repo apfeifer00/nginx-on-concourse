@@ -7,6 +7,7 @@ image_resource:
 
 inputs:
 - name: boshFiles
+- name: Nginx
 
 run: 
   path: boshFiles/Ressources/deploy.sh
