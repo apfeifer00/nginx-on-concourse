@@ -7,7 +7,7 @@ image_resource:
 }
 
 inputs:
-- name: boshFiles
+- name: nginx-on-concourse #boshFiles
 
 run: 
-  path: boshFiles/Ressources/uploadRelease.sh
+  path: nginx-on-concourse/Ressources/uploadRelease.sh
