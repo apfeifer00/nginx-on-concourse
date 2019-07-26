@@ -4,7 +4,7 @@ IP=$(bosh vms -d nginx| awk '{print $4}')
 curl $IP
 
 
-
+cd boshFiles‚
 #get highest tag number
 VERSION=`git describe --abbrev=0 --tags`
 
